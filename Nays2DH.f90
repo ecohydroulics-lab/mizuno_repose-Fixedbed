@@ -30,28 +30,28 @@ end module flag_op
 !--------------------------------------------------
 module common_cmuv
 	implicit none
-		! yu: xi���������?Ayvn:eta��������
+		! yu: xi?��?��?��?��?��?��?��?��?��?Ayvn:eta?��?��?��?��?��?��?��?��
 	real(8),dimension(:,:),allocatable :: yu, yun, yv, yvn, wu, wv
 end module common_cmuv
 
 !--------------------------------------------------
 module common_cmc
 	implicit none
-		! yc: ���?V���?Z�?x�?Aycb: ��????Z�?x
+		! yc: ?��?��?��?V?��?��?��?Z?��?x?��?Aycb: ?��?��????Z?��?x
 	real(8),dimension(:,:),allocatable :: yc, ycn, ycb
 end module common_cmc
 
 !--------------------------------------------------
 module common_cmuvp
 	implicit none
-		! up, vp: �?Z��������?���?(��??��W)�?Aux, uy�?F�?Z��������?f�?J���?g����
+		! up, vp: ?��?Z?��?��?��?��?��?��?��?��??��?��?��?(?��?��???��?��W)?��?Aux, uy?��?F?��?Z?��?��?��?��?��?��?��?��?f?��?J?��?��?��?g?��?��?��?��
 	real(8),dimension(:,:),allocatable :: up, vp, ux, uy
 end module common_cmuvp
 
 !--------------------------------------------------
 module common_cmhq
 	implicit none
-		! h: ����?Ahs: ���?[
+		! h: ?��?��?��?��?Ahs: ?��?��?��?[
 	real(8),dimension(:,:),allocatable :: h, hn, hs, whs
 	real(8),dimension(:),allocatable :: qc, qc_t, qc_t2
 end module common_cmhq
@@ -59,7 +59,7 @@ end module common_cmhq
 !--------------------------------------------------
 module common_cmgrd
 	implicit none
-		! gux, guy, gvx, gvy: CIP��?g���������?z(du_xi/dxi, du_xi/det)
+		! gux, guy, gvx, gvy: CIP?��?��?g?��?��?��?��?��?��?��?��?��?z(du_xi/dxi, du_xi/det)
 	real(8),dimension(:,:),allocatable :: gux, guy, gvx, gvy, gcx, gcy
 end module common_cmgrd
 
@@ -69,14 +69,14 @@ module common_cmxy
 	real(8),dimension(:,:),allocatable :: x, y, z, eta, ds, dn
 	real(8),dimension(:,:),allocatable :: sj,xi_x,xi_y,et_x, et_y, xi_r, et_r, xi_r_up, et_r_vp
 	real(8),dimension(:,:),allocatable :: z0
-		! zb: �?i�?q�?_��????�������Aeta_zb: �?Z��������zb
+		! zb: ?��?i?��?q?��?_?��?��?????��?��?��?��?��?��?��Aeta_zb: ?��?Z?��?��?��?��?��?��?��?��zb
 	real(8),dimension(:,:),allocatable :: zb_g, zb, eta_zb
 end module common_cmxy
 
 !--------------------------------------------------
 module common_cmxiet
 	implicit none
-		! up, vp��u��v��?�?`�?_��?l
+		! up, vp?��?��u?��?��v?��?��??��?`?��?_?��?��?l
 	real(8),dimension(:,:),allocatable :: xi_x_up,xi_y_up
 	real(8),dimension(:,:),allocatable :: et_x_up,et_y_up,xi_x_vp, xi_y_vp, et_x_vp, et_y_vp
 end module common_cmxiet
@@ -84,21 +84,21 @@ end module common_cmxiet
 !--------------------------------------------------
 module common_cmtst
 	implicit none
-		! vti: ���?[����?����??��?l
+		! vti: ?��?��?��?[?��?��?��?��??��?��?��?��???��?��?l
 	real(8),dimension(:,:),allocatable :: vti, tausta, qsu, usta
 end module common_cmtst
 
 !--------------------------------------------------
 module common_cmuxy
 	implicit none
-		! uxx, uyy: �?f�?J���?g���?W��?���?(�?i�?q�?_)�?Aqbxx, qbyy: �?f�?J���?g���?W��?|������(�?i�?q�?_)
+		! uxx, uyy: ?��?f?��?J?��?��?��?g?��?��?��?W?��?��??��?��?��?(?��?i?��?q?��?_)?��?Aqbxx, qbyy: ?��?f?��?J?��?��?��?g?��?��?��?W?��?��?|?��?��?��?��?��?��(?��?i?��?q?��?_)
 	real(8),dimension(:,:),allocatable :: uxx, uyy, qbxx, qbyy
 end module common_cmuxy
 
 !--------------------------------------------------
 module common_cmave
 	implicit none
-		! eave: ���?f��???��??W��
+		! eave: ?��?��?��?f?��?��????��?��??W?��?��
 	real(8),dimension(:)  ,allocatable :: eave, chb, emin, emax
 	real(8),dimension(:,:),allocatable :: eta0
 	real(8),dimension(:,:),allocatable :: b_elv(:,:)
@@ -107,26 +107,26 @@ end module common_cmave
 !--------------------------------------------------
 module common_cmsr
 	implicit none
-		! sr: ������???�?
+		! sr: ?��?��?��?��?��?��????��?
 	real(8),dimension(:,:),allocatable :: sr, cos_t, sin_t 
 end module common_cmsr
 
 !--------------------------------------------------
 module common_cmqb
 	implicit none
-		! qb_xi, qb_et: ��??��W��?|������
-		! kc: �?|������?��????�����?z��?��??W��
+		! qb_xi, qb_et: ?��?��???��?��W?��?��?|?��?��?��?��?��?��
+		! kc: ?��?|?��?��?��?��?��?��??��?��?????��?��?��?��?��?z?��?��??��?��??W?��?��
 	real(8),dimension(:,:),allocatable :: qb_xi,qb_et
 	real(8),dimension(:,:),allocatable :: kc, btheta_x, btheta_y, cos_bed, sin_bed
 	real(8),dimension(:,:),allocatable :: theta_x, theta_y, qbxc, qbyc
-		! dzds, dzdn : ��??��?��f������?��z
+		! dzds, dzdn : ?��?��???��?��??��?��f?��?��?��?��?��?��??��?��z
 	real(8),dimension(:,:),allocatable :: dzds, dzdn, ubnvb
 end module common_cmqb
 
 !--------------------------------------------------
 module common_cmet
 	implicit none
-		! eta_t: eta������?i�?q��???����x
+		! eta_t: eta?��?��?��?��?��?��?i?��?q?��?��????��?��?��?��x
 	real(8),dimension(:,:),allocatable :: eta_t
 end module common_cmet
 
@@ -159,21 +159,21 @@ end module common_qhyd
 !--------------------------------------------------
 module common_cmke
 	implicit none
-		! yk: ����G�?l���?M�?[�?Aep: �?U��??
+		! yk: ?��?��?��?��G?��?l?��?��?��?M?��?[?��?Aep: ?��?U?��?��??
 	real(8),dimension(:,:),allocatable :: yk,ykn, yep,yepn, gkx, gky, gex, gey
 end module common_cmke
 
 !--------------------------------------------------
 module common_cmkep
 	implicit none
-		! k-e���?f����?������??�?
+		! k-e?��?��?��?f?��?��?��?��??��?��?��?��?��?��???��?
 	real(8),dimension(:,:),allocatable :: ph, pkv, pev, strain
 end module common_cmkep
 
 !--------------------------------------------------
 module common_cmcf
 	implicit none
-		! cf: ��?���?R�?W���?Are: ���?C�?m���?Y���?Avege_el: �?A����?���?
+		! cf: ?��?��??��?��?��?R?��?W?��?��?��?Are: ?��?��?��?C?��?m?��?��?��?Y?��?��?��?Avege_el: ?��?A?��?��?��?��??��?��?��?
 	real(8),dimension(:,:),allocatable :: cf, re, cd_veg, vege_el, vege_h
 end module common_cmcf
 
@@ -186,14 +186,14 @@ end module common_cmyp
 !--------------------------------------------------
 module common_cmsnu
 	implicit none
-		! snu: �?Q���?S���?W��(�?Z������)�?Asnu_x:snu��?i�?q�?_��?l 
+		! snu: ?��?Q?��?��?��?S?��?��?��?W?��?��(?��?Z?��?��?��?��?��?��)?��?Asnu_x:snu?��?��?i?��?q?��?_?��?��?l 
 	real(8),dimension(:,:),allocatable :: snu,snu_x,snu0,snu0_x, snuk,snuk_x
 end module common_cmsnu
 
 !--------------------------------------------------
 module common_cmchunk
 	implicit none
-		! ��???Z�?H�?n��?p�����?[�?^(2014/3/19���?_��?g����???�?)
+		! ?��?��???Z?��?H?��?n?��?��?p?��?��?��?��?��?[?��?^(2014/3/19?��?��?��?_?��?��?g?��?��?��?��????��?)
 	real(8),dimension(:,:),allocatable :: a_chunk, sk_chunk
 	real(8) :: t_chunk, d_chunk,  h_chunk
 end module common_cmchunk
@@ -201,14 +201,14 @@ end module common_cmchunk
 !--------------------------------------------------
 module common_cmab
 	implicit none
-		! �?^������������?��W��?��??o��?��???��?W��
+		! ?��?^?��?��?��?��?��?��?��?��?��?��?��?��??��?��W?��?��??��?��??o?��?��??��?��????��?��?W?��?��
 	real(8),dimension(:,:,:),allocatable :: alpha, beta
 end module common_cmab
 
 !--------------------------------------------------
 module common_cmdnx
 	implicit none
-		! dnx, dsy: �?i�?q������???���?(j, i)
+		! dnx, dsy: ?��?i?��?q?��?��?��?��?��?��????��?��?��?(j, i)
 	real(8),dimension(:,:),allocatable :: dnx, dsy
 end module common_cmdnx
 
@@ -221,14 +221,14 @@ end module common_cmquv
 !--------------------------------------------------
 module common_cmqxe
 	implicit none
-		! q_xi, q_et: xi��et������?��?��W��?���?
+		! q_xi, q_et: xi?��?��et?��?��?��?��?��?��??��?��??��?��W?��?��??��?��?��?
 	real(8),dimension(:,:),allocatable :: q_xi, q_et
 end module common_cmqxe
 
 !--------------------------------------------------
 module common_cmdex
 	implicit none
-		! dex: 1�?X�?e�?b�?v��???��??���?
+		! dex: 1?��?X?��?e?��?b?��?v?��?��????��?��???��?��?��?
 	real(8),dimension(:,:),allocatable :: dex
 end module common_cmdex
 
@@ -242,27 +242,28 @@ module common_output
 	real(8),dimension(:,:),allocatable :: hsxx, voltex, c_g, dmn, fr_g, us_g, ts_g, phi_g
 	real(8),dimension(:,:,:),allocatable :: cc_m
 
+
 end module common_output
 
 !--------------------------------------------------
 module mix
 	implicit none
-		! nk: ���?a�?K�?w��?�?(1�?`)
+		! nk: ?��?��?��?a?��?K?��?w?��?��??��?(1?��?`)
 	integer :: j_mix, nk, nm
-		! nb: �?e�?Z����?????w��?�?
+		! nb: ?��?e?��?Z?��?��?��?��?????w?��?��??��?
 	integer,dimension(:,:),allocatable :: nb, flg_mix
-		! e_d: ��???w���?Ae_thick: ��?��w���?Ae_m: �����?w��
+		! e_d: ?��?��???w?��?��?��?Ae_thick: ?��?��??��?��w?��?��?��?Ae_m: ?��?��?��?��?��?w?��?��
 	real(8) :: e_d, e_thick, e_m
-		! ddk: �?e���?a�?T�?C�?Y�?Atsci: ��?����??��l������?��??��??��������E�?|����
+		! ddk: ?��?e?��?��?��?a?��?T?��?C?��?Y?��?Atsci: ?��?��??��?��?��?��???��?��l?��?��?��?��?��?��??��?��???��?��???��?��?��?��?��?��?��?��E?��?|?��?��?��?��
 	real(8),dimension(:),allocatable :: ddist_mm, rdsgi, uci, tsci0, ddk, sum_f, wfk
 	real(8),dimension(:,:),allocatable :: pdist_m_100, pmk0
 	real(8),dimension(:,:),allocatable :: pdist_d_100, pdk0
-		! e_t: �?J��?w���?Adm_t: �?J��?w��?������a�?Adm_m: �����?w��?������a�?Atscm: �������?a��???�����?E�������?|����
+		! e_t: ?��?J?��?��?w?��?��?��?Adm_t: ?��?J?��?��?w?��?��??��?��?��?��?��?��a?��?Adm_m: ?��?��?��?��?��?w?��?��??��?��?��?��?��?��a?��?Atscm: ?��?��?��?��?��?��?��?a?��?��????��?��?��?��?��?E?��?��?��?��?��?��?��?|?��?��?��?��
 	real(8),dimension(:,:),allocatable :: eta_base, e_t, dm_t, dm_m, dmxx, tscm
-		! p_m, p_t, p_d: �����?w�?A�?J��?w�?A��???w��?e���?a��?��??�?
+		! p_m, p_t, p_d: ?��?��?��?��?��?w?��?A?��?J?��?��?w?��?A?��?��???w?��?��?e?��?��?��?a?��?��??��?��???��?
 	real(8),dimension(:,:,:),allocatable :: dex_mix, qb_xi_mix, qb_et_mix, p_m, p_t, dm_d
 	real(8),dimension(:,:,:),allocatable :: qbxkc, qbykc
-		! tsk: �?e���?a��?������|����?Atsck: �?e���?a��?��������E�?|����
+		! tsk: ?��?e?��?��?��?a?��?��??��?��?��?��?��?��|?��?��?��?��?Atsck: ?��?e?��?��?��?a?��?��??��?��?��?��?��?��?��?��E?��?|?��?��?��?��
 	real(8),dimension(:,:,:),allocatable :: tsk, tsck, usck
 	real(8),dimension(:,:,:,:),allocatable :: p_d
 
@@ -408,7 +409,7 @@ contains
 		allocate( dex(0:i,0:j) )
 		allocate( eave_t(0:i), chb_t(0:i), emin_t(0:i), emax_t(0:i) )
 		allocate( eave_t2(0:j), chb_t2(0:j), emin_t2(0:j), emax_t2(0:j) )
-    allocate( fr_c(0:i,0:j), us_g(0:i,0:j), ts_g(0:i,0:j), fr_g(0:i,0:j) )
+    allocate( fr_c(0:i,0:j), us_g(0:i,0:j), ts_g(0:i,0:j), fr_g(0:i,0:j))
 		allocate( phi(0:i,0:j), emb(0:i,0:j) )
 		allocate( z_min_main(0:i), z_ave_main(0:i), h_ave_main(0:i) )
 		allocate( z_min_tri(0:i), z_ave_tri(0:i), h_ave_tri(0:i) )
@@ -2203,7 +2204,7 @@ contains
        end do
     end if
     !
-    ! ------ ��Q���?Z����???? ------
+    ! ------ ?��?��Q?��?��?��?Z?��?��?��?��???? ------
     !  Main channel
     do i = 1, nx-1
        if(j_conf.eq.0) then		!h101104 conf
@@ -2339,17 +2340,17 @@ contains
     end do
     if(j_conf == 1) then		!h101104 conf
        do j = j_t1, j_t2
-          qu(  i_t1,j) = qu(  i_t1-1,j)		!h101104 conf1�����?[
+          qu(  i_t1,j) = qu(  i_t1-1,j)		!h101104 conf1?��?��?��?��?��?[
           q_xi(i_t1,j) = q_xi(i_t1-1,j)
           yu(  i_t1,j) = yu(  i_t1-1,j)
           uti( i_t1,j) = uti( i_t1-1,j)
        end do
     else if(j_conf >= 2) then
-       qu(  j_t1,j) = qu(  j_t1+jxd,j)		!h101104 conf23�����?[
+       qu(  j_t1,j) = qu(  j_t1+jxd,j)		!h101104 conf23?��?��?��?��?��?[
        q_xi(j_t1,j) = q_xi(j_t1+jxd,j)
        yu(  j_t1,j) = yu(  j_t1+jxd,j)
        uti( j_t1,j) = uti( j_t1+jxd,j)
-       qu(  j_t2,j) = qu(  j_t2-jxd,j)		!h101104 conf23��??�?[
+       qu(  j_t2,j) = qu(  j_t2-jxd,j)		!h101104 conf23?��?��???��?[
        q_xi(j_t2,j) = q_xi(j_t2-jxd,j)
        yu(  j_t2,j) = yu(  j_t2-jxd,j)
        uti( j_t2,j) = uti( j_t2-jxd,j)
@@ -2610,7 +2611,7 @@ contains
     real(8),dimension(0:im,0:jm),intent(in)    :: eta, hs
     real(8),dimension(0:im,0:jm),intent(inout) :: z  , hsxx
     !
-			!	��?��?p��????
+			!	?��?��??��?��?p?��?��????
 
 		hsxx( 0, 0) = hs( 1, 1)
 		hsxx(nx, 0) = hs(nx, 1)
@@ -2622,7 +2623,7 @@ contains
 		z( 0,ny) = eta( 1,ny)
 		z(nx,ny) = eta(nx,ny)
 
-			!	��?��????????
+			!	?��?��??��?��????????
 
 !$omp do private(i)
 		do i=1,nx-1
@@ -2640,7 +2641,7 @@ contains
 			z(nx,j) = (eta(nx,j)+eta(nx,j+1))*0.5d0
 		end do
 
-			!	��?������????
+			!	?��?��??��?��?��?��?��?��????
 
 !$omp do private(i,j)
 		do j=1,ny-1
@@ -2826,12 +2827,12 @@ module hcal_m
 	use uvpcal_m
 	use uxuycal_m
 	use bound_m
-
+	use common_cmave	!yama
   contains
 
 	!---------------------------------------------------------
   
-	subroutine hcal( errmax, err, lcount, alh, qc_ave, hs_ave, ij_ero )
+	subroutine hcal( errmax, err, lcount, alh, qc_ave, hs_ave)
 		implicit none
 
 		integer :: i,j,l
@@ -2844,16 +2845,52 @@ module hcal_m
 					, c_xi_shear, c_et_shear, hl, hr, hd, hu, h_veg		&
 					, hss, hsn, zs, zn, hse, hsw, ze, zw
 
-    !---------------------------------------------------------
-		do j=1, ny
-			do i=1, nx-1
-				if (ij_ero(i,j)==0) then
+    !---------------------------------------------------------mizuno
+		do j=2, ny+1
+			do i=1, nx
+				if (ij_ero(i,j)==0 .and. ij_ero(i,j-1)==1) then
 					if (eta(i,j)<eta0(i,j).and.dabs(eta(i,j)-eta0(i,j))>3.d0) then
-						ij_ero(i-1,j)=1
+						ij_ero(i,j-1)=0
+						write(*,*) "change_after!!", i,j-1,ij_ero(i,j-1)
+					endif
+				end if
+			end do
+		end do
+
+		do j=ny-1, 1,-1
+			do i=1, nx				
+				if (ij_ero(i,j)==0 .and. ij_ero(i,j+1)==1) then
+					if (eta(i,j)<eta0(i,j).and.dabs(eta(i,j)-eta0(i,j))>3.d0) then
+						ij_ero(i,j+1)=0
+						write(*,*) "change_after!!", i,j+1,ij_ero(i,j+1)
 					endif
 				endif
 			enddo
 		enddo
+!--------------------------------------------------------
+!---------------------------------------mizuno
+		do j=1, ny
+			do i=2, nx+1
+				if (ij_ero(i,j)==0 .and. ij_ero(i-1,j)==1) then
+					if (eta(i,j)<eta0(i,j).and.dabs(eta(i,j)-eta0(i,j))>3.d0) then
+						ij_ero(i-1,j)=0
+						write(*,*) "change_after!!", i-1,j,ij_ero(i-1,j)
+					endif
+				end if
+			end do
+		end do
+
+		do j=1,ny
+			do i=nx-1, 1,-1				
+				if (ij_ero(i,j)==0 .and. ij_ero(i+1,j)==1) then
+					if (eta(i,j)<eta0(i,j).and.dabs(eta(i,j)-eta0(i,j))>3.d0) then
+						ij_ero(i+1,j)=0
+						write(*,*) "change_after!!", i+1,j,ij_ero(i+1,j)
+					endif
+				endif
+			enddo
+		enddo
+!----------------------------------------------
 !$omp do private(i,j)
 		do j=1,ny
 			do i=1,nx
@@ -3294,7 +3331,7 @@ contains
           yun(nx-1,j) = yun(   2,j)
        end do
 
-!!$omp do		! ��������
+!!$omp do		! ?��?��?��?��?��?��?��?��
 !$omp single
        do j=1,ny-1
           yvn(   1,j) = yvn(nx-2,j)
@@ -6430,7 +6467,7 @@ contains
     !
     do n=0,nq
        !
-       ! ��??�?[����???v�?Z
+       ! ?��?��???��?[?��?��?��?��???v?��?Z
        !
        if(q_ups(n) <= 1e-6) then
           !  h_ups(n) = h(1,j)
@@ -6468,7 +6505,7 @@ contains
 100    continue
        h_ups(n) = hh
        !				!h101019 conf
-       ! ��??�?[����???v�?Z�?i�?x��?��j
+       ! ?��?��???��?[?��?��?��?��???v?��?Z?��?i?��?x?��?��??��?��j
        !
        if(j_conf.eq.1) then
           if(q_ups_t(n).le.1e-6) then
@@ -6533,7 +6570,7 @@ contains
        end if
        !				!h101019 conf
        !
-       ! �����?[����???v�?Z
+       ! ?��?��?��?��?��?[?��?��?��?��???v?��?Z
        !
        if( j_wl == 1 .or. j_wl == 3) then
           jss1=1				!h101019 conf
@@ -6636,7 +6673,7 @@ contains
 			hsmax2_t2 = (snmm(nnxm,j_t2+js2)*qmax_t/(chb_t2(j_t2)*dsqrt(slope_up_t)))**0.6d0*100.d0
 		end if
 !
-	! ��??�?[����???v�?Z
+	! ?��?��???��?[?��?��?��?��???v?��?Z
 
 		if( j_conf==0 ) then
 			jss1 = 1
@@ -6686,7 +6723,7 @@ contains
 
 		end if
 !
-	! ��??�?[����???v�?Z�?i�?x��?��j
+	! ?��?��???��?[?��?��?��?��???v?��?Z?��?i?��?x?��?��??��?��j
 !
 		if( j_conf==1 ) then
 			
@@ -7834,14 +7871,14 @@ module cell2grid_m
     real(8),dimension(0:im,0:jm),intent(out)    :: f_g
     integer :: i,j
     !
-			!	��?��?p��????
+			!	?��?��??��?��?p?��?��????
 
 		f_g( 0, 0) = f_c( 1, 1)
 		f_g(nx, 0) = f_c(nx, 1)
 		f_g( 0,ny) = f_c( 1,ny)
 		f_g(nx,ny) = f_c(nx,ny)
 
-			!	��?��????????
+			!	?��?��??��?��????????
 !$omp do private(i)
 		do i=1,nx-1
 			f_g(i, 0) = (f_c(i, 1)+f_c(i+1, 1))*0.5d0
@@ -7854,7 +7891,7 @@ module cell2grid_m
 			f_g(nx,j) = (f_c(nx,j)+f_c(nx,j+1))*0.5d0
 		end do
 
-			!	��?������????
+			!	?��?��??��?��?��?��?��?��????
 !$omp do private(i,j)
 		do j=1,ny-1
 			do i=1,nx-1
@@ -8825,7 +8862,7 @@ contains
    ! -------------------------------------------------------------
    !
    ! ----- cal. of bed elevation changes -----
-   !       ��?����????X��?v�?Z
+   !       ?��?��??��?��?��?��????X?��?��?v?��?Z
    !
    
 !!$omp single
@@ -8951,7 +8988,7 @@ contains
 		end do
    !
    ! ------ cal. of sediment fraction changes in exchange layer ------
-   !        ��?����????��??����x���?z��?v�?Z
+   !        ?��?��??��?��?��?��?????��?��???��?��?��?��x?��?��?��?z?��?��?v?��?Z
    !
 
 		nbmin =  9999
@@ -9081,7 +9118,7 @@ contains
    ! -------------------------------------------------------------
    !
    ! ----- cal. of bed elevation changes -----
-   !       ��?����????X��?v�?Z
+   !       ?��?��??��?��?��?��????X?��?��?v?��?Z
    !
    
 !!$omp single
@@ -9214,7 +9251,7 @@ contains
 		end do
    !
    ! ------ cal. of sediment fraction changes in exchange layer ------
-   !        ��?����????��??����x���?z��?v�?Z
+   !        ?��?��??��?��?��?��?????��?��???��?��?��?��x?��?��?��?z?��?��?v?��?Z
    !
 
 		nbmin =  9999
@@ -9325,7 +9362,7 @@ contains
 		integer :: k, ier
 !		double precision :: p_tot
 		
-		!��?�?
+		!?��?��??��?
 		if( dex(i,j)>0.d0 ) then
 			if( e_t(i,j)+dex(i,j)<e_d ) then
 				e_t_new = e_t(i,j)+dex(i,j)
@@ -9345,7 +9382,7 @@ contains
 				end do
 			end if
 			
-		!��??
+		!?��?��??
 		else
 			if( e_t(i,j)+dex(i,j)>0.d0 ) then
 				e_t_new = e_t(i,j)+dex(i,j)
@@ -9361,8 +9398,8 @@ contains
 					nb_new = 0
 					do k=1,nk
 						p_m_new(k) = p_m(i,j,k)+e_t(i,j)/e_m*p_t(i,j,k)+dex_mix(i,j,k)/e_m
-						p_t_new(k) = p_d(i,j,nb(i,j),k)		! �?_�?~�?[
-						p_d_new(k) = p_t_new(k)					! �?_�?~�?[
+						p_t_new(k) = p_d(i,j,nb(i,j),k)		! ?��?_?��?~?��?[
+						p_d_new(k) = p_t_new(k)					! ?��?_?��?~?��?[
 					end do
 				else
 					e_t_new = e_t(i,j)+dex(i,j)+e_d
@@ -9379,7 +9416,7 @@ contains
 		end if
 		
 		if( nb_new<0 ) then
-			write(*,*) 'Error !'		!����?����????����?��??�?
+			write(*,*) 'Error !'		!?��?��?��?��??��?��?��?��?????��?��?��?��??��?��???��?
 			write(*,*) 'The number of deposited layer is less than 0 at i=',i,'j=',j
 			write(*,*) 'Please change the thickness of deposited layer, &
           			thickness of movable bed layer or the maximum number of deposited layer.'
@@ -9451,23 +9488,23 @@ contains
 			do k=1,nk
 				p_m_new(k) = p_m(i,j,k)*(emb(i,j)-e_t_new)/emb_new+dex_mix(i,j,k)/emb_new
 				p_t_new(k) = p_m(i,j,k)
-				p_d_new(k) = p_t_new(k)		! �?_�?~�?[
+				p_d_new(k) = p_t_new(k)		! ?��?_?��?~?��?[
 			end do
 		else if( emb_new<=0.d0 ) then
 			e_t_new = 0.d0
 			
 			do k=1,nk
 				p_m_new(k) = 0.d0
-				p_t_new(k) = p_m_new(k)		! �?_�?~�?[
-				p_d_new(k) = p_t_new(k)		! �?_�?~�?[
+				p_t_new(k) = p_m_new(k)		! ?��?_?��?~?��?[
+				p_d_new(k) = p_t_new(k)		! ?��?_?��?~?��?[
 			end do
 		else
 			e_t_new = 0.d0
 			
 			do k=1,nk
 				p_m_new(k) = (emb(i,j)*p_m(i,j,k)+dex_mix(i,j,k))/emb_new
-				p_t_new(k) = p_m_new(k)		! �?_�?~�?[
-				p_d_new(k) = p_t_new(k)		! �?_�?~�?[
+				p_t_new(k) = p_m_new(k)		! ?��?_?��?~?��?[
+				p_d_new(k) = p_t_new(k)		! ?��?_?��?~?��?[
 			end do
 		end if
 				
@@ -9724,17 +9761,17 @@ module ebank_m
 
 		dzx = 0.;
 !
-! --- ���?f������?`�?F�?b�?N ---
+! --- ?��?��?��?f?��?��?��?��?��?��?`?��?F?��?b?��?N ---
 !
 		do i=1,nx
 			do j=1,ny-1
 				dedn(i,j) = (eta(i,j+1)-eta(i,j))/dnx(i,j)
 			end do
 			do j=ny-1,1,-1
-				if( ijo_in(i,j)==0 .and. ijo_in(i,j+1)==0 ) then		! ��?����?��\������?????�?
-!					if( hs(i,j)>hmin .or. hs(i,j+1)>hmin ) then			! ����������???�?
-					if( hs(i,j)>0.005 .or. hs(i,j+1)>0.005 ) then			! ����������???�?
-						if( phi(i,j+1)==1.d0 ) then							! ������?��??����w��?��?�������?
+				if( ijo_in(i,j)==0 .and. ijo_in(i,j+1)==0 ) then		! ?��?��??��?��?��?��??��?��\?��?��?��?��?��?��??????��?
+!					if( hs(i,j)>hmin .or. hs(i,j+1)>hmin ) then			! ?��?��?��?��?��?��?��?��?��?��????��?
+					if( hs(i,j)>0.005 .or. hs(i,j+1)>0.005 ) then			! ?��?��?��?��?��?��?��?��?��?��????��?
+						if( phi(i,j+1)==1.d0 ) then							! ?��?��?��?��?��?��??��?��???��?��?��?��w?��?��??��?��??��?��?��?��?��?��?��?
 							if( dedn(i,j)>tantc ) then
                                 dz1 = (eta(i,j+1)-eta(i,j)-tantc*dnx(i,j))/(1.d0+sj(i,j+1)/sj(i,j))
 								dz2 = -sj(i,j+1)/sj(i,j)*dz1
@@ -9763,7 +9800,7 @@ module ebank_m
 			end do
 		end do
 !
-! --- �?c�?f������?`�?F�?b�?N ---
+! --- ?��?c?��?f?��?��?��?��?��?��?`?��?F?��?b?��?N ---
 !
 		do j=1,ny
 			do i=1,nx-1
@@ -9870,16 +9907,16 @@ module ebank_m
 			end do
 		end do
 !
-! --- ���?f������?`�?F�?b�?N ---
+! --- ?��?��?��?f?��?��?��?��?��?��?`?��?F?��?b?��?N ---
 !
 		do i=1,nx
 			do j=1,ny-1
 				dedn(i,j) = (eta(i,j+1)-eta(i,j))/dnx(i,j)
 			end do
 			do j=ny-1,1,-1
-				if( ijo_in(i,j)==0 .and. ijo_in(i,j+1)==0 ) then		! ��?����?��\������?????�?
-					if( hs(i,j)>hmin .or. hs(i,j+1)>hmin ) then			! ����������???�?
-						if( phi(i,j+1)==1.d0 ) then							! ������?��??����w��?��?�������?
+				if( ijo_in(i,j)==0 .and. ijo_in(i,j+1)==0 ) then		! ?��?��??��?��?��?��??��?��\?��?��?��?��?��?��??????��?
+					if( hs(i,j)>hmin .or. hs(i,j+1)>hmin ) then			! ?��?��?��?��?��?��?��?��?��?��????��?
+						if( phi(i,j+1)==1.d0 ) then							! ?��?��?��?��?��?��??��?��???��?��?��?��w?��?��??��?��??��?��?��?��?��?��?��?
 							if( dedn(i,j)>tantc ) then
 								dz1 = (eta(i,j+1)-eta(i,j)-tantc*dnx(i,j))/(1.d0+sj(i,j+1)/sj(i,j))
 								dz2 = -sj(i,j+1)/sj(i,j)*dz1
@@ -9915,7 +9952,7 @@ module ebank_m
 			end do
 		end do
 !
-! --- �?c�?f������?`�?F�?b�?N ---
+! --- ?��?c?��?f?��?��?��?��?��?��?`?��?F?��?b?��?N ---
 !
 		do j=1,ny
 			do i=1,nx-1
@@ -10199,7 +10236,7 @@ end module cross_sectional_output
 		end do
 !$omp end single
 
-					!	��?��????????
+					!	?��?��??��?��????????
 
 !$omp do private(i,k)
 		do i=1,nx-1
@@ -10217,7 +10254,7 @@ end module cross_sectional_output
 			end do
 		end do
 
-					!	��?������????
+					!	?��?��??��?��?��?��?��?��????
 
 !$omp do private(i,j,k)
 		do j=1,ny-1
@@ -10431,7 +10468,7 @@ Program Shimizu
         call cg_error_print_f()			
      ENDIF
 
-     ! gui��cgns�?t�?@�?C����??��????��??��??�?m��?���?t�?@�?C����???�?
+     ! gui?��?��cgns?��?t?��?@?��?C?��?��?��?��???��?��?????��?��???��?��???��?m?��?��??��?��?��?t?��?@?��?C?��?��?��?��????��?
      call iric_initoption_f(IRIC_OPTION_CANCEL, ier)
 
      call cg_iric_gotogridcoord2d_f(ni4, nj4, ier)
@@ -10472,12 +10509,12 @@ Program Shimizu
      
      CALL CG_IRIC_READ_INTEGER_F('j_conf', j_conf, ier)
    !
-   !  j_conf = 0 �����?_����
-   !  j_conf = 1 �����?_����(�?^�?C�?vA����???�?)
-   !  j_conf = 2 �����?_����(�?^�?C�?vB�����������?A����?���?)
-   !  j_conf = 3 �����?_����(�?^�?C�?vB�����������?A�?E��?���?)
-   !  �?{�� j_m1--j_m2
-   !  �?x�� j_t1--j_t2
+   !  j_conf = 0 ?��?��?��?��?��?_?��?��?��?��
+   !  j_conf = 1 ?��?��?��?��?��?_?��?��?��?��(?��?^?��?C?��?vA?��?��?��?��????��?)
+   !  j_conf = 2 ?��?��?��?��?��?_?��?��?��?��(?��?^?��?C?��?vB?��?��?��?��?��?��?��?��?��?��?��?A?��?��?��?��??��?��?��?)
+   !  j_conf = 3 ?��?��?��?��?��?_?��?��?��?��(?��?^?��?C?��?vB?��?��?��?��?��?��?��?��?��?��?��?A?��?E?��?��??��?��?��?)
+   !  ?��?{?��?�� j_m1--j_m2
+   !  ?��?x?��?�� j_t1--j_t2
      !
      if(j_conf.eq.1) then
         write(*,*) 'Confluence TYPE-A'
@@ -10518,71 +10555,71 @@ Program Shimizu
    !
      CALL CG_IRIC_READ_INTEGER_F('j_wl', j_wl, ier)
    !
-   !   j_wl = 0 ...�����?[����?��l��^����(h_down)
-   !   j_wl = 1 ...�����?[����???����v�?Z��?��??�?
-   !   j_wl = 2 ...�����?[����???t�?@�?C������????���?
-	!   j_wl = 3 ...�����?[����???��R���?o
+   !   j_wl = 0 ...?��?��?��?��?��?[?��?��?��?��??��?��l?��?��^?��?��?��?��(h_down)
+   !   j_wl = 1 ...?��?��?��?��?��?[?��?��?��?��????��?��?��?��v?��?Z?��?��??��?��???��?
+   !   j_wl = 2 ...?��?��?��?��?��?[?��?��?��?��???t?��?@?��?C?��?��?��?��?��?��?????��?��?��?
+	!   j_wl = 3 ...?��?��?��?��?��?[?��?��?��?��????��?��R?��?��?��?o
 
      CALL cg_iric_read_real_f('h_down', h_down, ier)
    !
-   !   h_dwown = �����?[����???l(��Lj_wl=0��?��????L��)
+   !   h_dwown = ?��?��?��?��?��?[?��?��?��?��???l(?��?��Lj_wl=0?��?��??��?��????L?��?��)
    
      CALL CG_IRIC_READ_INTEGER_F('j_slope', j_slope, ier)
    !
-   !   ��Lj_wl=1��?������v�?Z��?p������z��
-   !   j_slope=0.... ��?��f�?[�?^���玩���?I��?v�?Z����
-   !   j_slope=1.... �?^����??����?��??^����l��?���?bh_slope��?l
+   !   ?��?��Lj_wl=1?��?��??��?��?��?��?��?��v?��?Z?��?��?p?��?��?��?��?��?��z?��?��
+   !   j_slope=0.... ?��?��??��?��f?��?[?��?^?��?��?��玩?��?��?��?I?��?��?v?��?Z?��?��?��?��
+   !   j_slope=1.... ?��?^?��?��?��?��???��?��?��?��??��?��??^?��?��?��?��l?��?��??��?��?��?bh_slope?��?��?l
 
      CALL cg_iric_read_real_f('bh_slope', bh_slope, ier)
    !
-   !   ��Lj_wl=1��j_slope=1��????��?^������z = bh_slope
+   !   ?��?��Lj_wl=1?��?��j_slope=1?��?��?????��?��?^?��?��?��?��?��?��z = bh_slope
    !
    ! ------ Parameters for Upstream Boundary ------
    !
      CALL CG_IRIC_READ_INTEGER_F('j_upv', j_upv, ier)
    !
-   !  j_upv =1 ��??�?[��?����????��v�?Z��?^����
-   !  j_upv =2 ��??�?[��?������A��??�?[��?��[���?g����?��??���?t�?Z����
+   !  j_upv =1 ?��?��???��?[?��?��??��?��?��?��?????��?��v?��?Z?��?��?^?��?��?��?��
+   !  j_upv =2 ?��?��???��?[?��?��??��?��?��?��?��?��A?��?��???��?[?��?��??��?��[?��?��?��?g?��?��?��?��??��?��???��?��?��?t?��?Z?��?��?��?��
    !
      CALL CG_IRIC_READ_INTEGER_F('j_upv_slope', j_upv_slope, ier)
    !
-   !  ��Lj_upv=1��???��??����v�?Z��?g�?p������z��?^����
+   !  ?��?��Lj_upv=1?��?��????��?��???��?��?��?��v?��?Z?��?��?g?��?p?��?��?��?��?��?��z?��?��?^?��?��?��?��
    !
-   !    j_upv_slope=0 .... ��?��f�?[�?^���玩���?I��?v�?Z
-   !    j_upv_slope=1 .... �?l��^����??����????��?��??��??�?uvp_slope
+   !    j_upv_slope=0 .... ?��?��??��?��f?��?[?��?^?��?��?��玩?��?��?��?I?��?��?v?��?Z
+   !    j_upv_slope=1 .... ?��?l?��?��^?��?��?��?��???��?��?��?��?????��?��??��?��???��?��???��?uvp_slope
    !
      CALL cg_iric_read_real_f('upv_slope', upv_slope, ier)
      CALL cg_iric_read_real_f('upv_slope_t', upv_slope_t, ier)
    !                       
-   !   ��Lj_upv=1��j_upv_slope=1��????��?^������z = upv_slope
-   !   �?x��?��??��z = upv_slope_t
+   !   ?��?��Lj_upv=1?��?��j_upv_slope=1?��?��?????��?��?^?��?��?��?��?��?��z = upv_slope
+   !   ?��?x?��?��??��?��???��?��z = upv_slope_t
    !
    ! ---- Parameters for Initial Water Surface Profile-----
    !
      CALL CG_IRIC_READ_INTEGER_F('i_flow', i_flow, ier)
    !
-   !   i_flow=0 ��������?`��?���?(�����?z)
-   !   i_flow=1 ��������?`��???�?(�?P��?_��?Q����)
-   !   i_flow=2 ��������?`��?����v�?Z
-   !   i_flow=3 ��������?`��?s�����?v�?Z
+   !   i_flow=0 ?��?��?��?��?��?��?��?��?`?��?��??��?��?��?(?��?��?��?��?��?z)
+   !   i_flow=1 ?��?��?��?��?��?��?��?��?`?��?��????��?(?��?P?��?��?_?��?��?Q?��?��?��?��)
+   !   i_flow=2 ?��?��?��?��?��?��?��?��?`?��?��??��?��?��?��v?��?Z
+   !   i_flow=3 ?��?��?��?��?��?��?��?��?`?��?��?s?��?��?��?��?��?v?��?Z
 
      CALL cg_iric_read_real_f('h_slope', h_slope, ier)
      CALL cg_iric_read_real_f('h_slope_t', h_slope_t, ier)
    !
-   !  ��Li_flow=0��???��??������??��z  
-   !  ��Li_flow=0��???��??x��??������??��z  
+   !  ?��?��Li_flow=0?��?��????��?��???��?��?��?��?��?��???��?��z  
+   !  ?��?��Li_flow=0?��?��????��?��??x?��?��???��?��?��?��?��?��???��?��z  
 
      CALL cg_iric_read_real_f('x_bk', x_bk, ier)
    !
-   !  ��Li_flow=1��???��??��z��?��_��?��������?���? x_bk
+   !  ?��?��Li_flow=1?��?��????��?��???��?��z?��?��??��?��_?��?��??��?��?��?��?��?��?��?��??��?��?��? x_bk
    !   
      CALL cg_iric_read_real_f('h_slope_1', h_slope_1, ier)
      CALL cg_iric_read_real_f('h_slope_2', h_slope_2, ier)
      CALL cg_iric_read_real_f('h_slope_12t', h_slope_12t, ier)
    !
-   !  ��Li_flow=1��???��??������??��z(������)h_slope_1
-   !  ��Li_flow=1��???��??������??��z(��??��)h_slope_2
-   !  ��Li_flow=1��???��??������??��z(��??���?x��)h_slope_12t
+   !  ?��?��Li_flow=1?��?��????��?��???��?��?��?��?��?��???��?��z(?��?��?��?��?��?��)h_slope_1
+   !  ?��?��Li_flow=1?��?��????��?��???��?��?��?��?��?��???��?��z(?��?��???��?��)h_slope_2
+   !  ?��?��Li_flow=1?��?��????��?��???��?��?��?��?��?��???��?��z(?��?��???��?��?��?x?��?��)h_slope_12t
    !
    ! ---- Parameters for Bed Material  -----
    !
@@ -10777,7 +10814,7 @@ Program Shimizu
      end if
      
      if( j_mix==0 ) then
-     	e_m = diam			! ��????����
+     	e_m = diam			! ?��?��?????��?��?��?��
      end if
      
      if( j_mix==1 ) then
@@ -11265,7 +11302,7 @@ Program Shimizu
     !
     ! ----- set bed friction parameter -----
     !
-    do j = 0, ny              !�?s�?v�����?O��?���?
+    do j = 0, ny              !?��?s?��?v?��?��?��?��?��?O?��?��??��?��?��?
        do i = 0, nx
           snmm( i,j) = sn_g
        end do
@@ -11405,7 +11442,7 @@ Program Shimizu
 
     if( j_wl /= 0 ) h_down = - 999.
   !
-  !    slope �����?v�?Z������?��????��z
+  !    slope ?��?��?��?��?��?v?��?Z?��?��?��?��?��?��??��?��?????��?��z
   !
     if(j_slope == 1.or.calculated_slope <= 0.) then
        slope = bh_slope
@@ -11680,8 +11717,8 @@ Program Shimizu
 
 !$omp end single
 
-!      if ( icount == 1.or.mod(icount-1,kmod) == 0 ) then		!h time=0���?o��
-      if ( icount == 0.or.mod(icount,kmod) == 0 ) then		!h time=0���?o��
+!      if ( icount == 1.or.mod(icount-1,kmod) == 0 ) then		!h time=0?��?��?��?o?��?��
+      if ( icount == 0.or.mod(icount,kmod) == 0 ) then		!h time=0?��?��?��?o?��?��
          if( iofrg == 0 ) then
             iofrg = 1
             if( i_re_flag_i == 0 ) then
@@ -11824,7 +11861,7 @@ Program Shimizu
      !
 !$omp single
 
-        ! ���?[�?U��GUI���? "STOP" �?{�?^����������?��s���?L�����?Z���������?m�?F
+        ! ?��?��?��?[?��?U?��?��GUI?��?��?��? "STOP" ?��?{?��?^?��?��?��?��?��?��?��?��?��?��??��?��s?��?��?��?L?��?��?��?��?��?Z?��?��?��?��?��?��?��?��?��?m?��?F
      call iric_check_cancel_f(istatus)
      if(istatus == 1) then
         write(*,*) "Solver is stopped because the STOP button was clicked."
@@ -11832,12 +11869,12 @@ Program Shimizu
         stop
      end if
 
-             !gui��cgns�?t�?@�?C����??������??��????�?
+             !gui?��?��cgns?��?t?��?@?��?C?��?��?��?��???��?��?��?��?��?��???��?��?????��?
      do
          call iric_check_lock_f(condfile, istatus)
          if(istatus == 1) then
              call sleep(1)
-         elseif(istatus == 0)then  !��?����????����do���?[�?v��???���?
+         elseif(istatus == 0)then  !?��?��??��?��?��?��?????��?��?��?��do?��?��?��?[?��?v?��?��????��?��?��?
              exit
          end if
      end do
@@ -11901,7 +11938,7 @@ Program Shimizu
    !
    !-------------------------------------------
      call vegetation_height
-     call hcal( errmax, err, lcount, alh, qc_ave, hs_ave, ij_ero )
+     call hcal( errmax, err, lcount, alh, qc_ave, hs_ave )
      if( jrep == 1 ) call hcal_v(     qp, qc_ave, hs_ave )
      call bound_h( hn, hs, eta )
      call bound_u( yun )
@@ -12100,6 +12137,7 @@ Program Shimizu
 !$omp single
     icount	= icount + 1
     time		= dble( icount ) * dt
+	write(*,*)time
 !$omp end single
 
 	end do
@@ -12142,7 +12180,7 @@ subroutine write_cgns(InputFile,time,disch,im,jm,x,y,u,v,hs,z		&
   
   nx=im
   ny=jm
-  
+
   CALL CG_IRIC_WRITE_SOL_TIME_F(time, IER)
   CALL CG_IRIC_WRITE_SOL_BASEITERATIVE_REAL_F('Discharge(m3s-1)', disch, IER)
 
@@ -12206,7 +12244,7 @@ subroutine write_cgns(InputFile,time,disch,im,jm,x,y,u,v,hs,z		&
   CALL CG_IRIC_WRITE_SOL_REAL_F("Elevation(m)",Zbdata1,IER)
   CALL CG_IRIC_WRITE_SOL_REAL_F("WaterSurfaceElevation(m)",WSE,IER)
   CALL CG_IRIC_WRITE_SOL_REAL_F("ShearStress(Nm-2)",ts0,IER)
-  CALL CG_IRIC_WRITE_SOL_REAL_F("FixedBed",FixedBed,IER)
+  CALL CG_IRIC_WRITE_SOL_INTEGER_F("FixedBed",FixedBed,IER)
 
   if( jop_dz  ==0 ) CALL CG_IRIC_WRITE_SOL_REAL_F("ElevationChange(m)",z01,IER)
   if( jop_fb  ==0 ) CALL CG_IRIC_WRITE_SOL_REAL_F("FixedBedElevation(m)",zfixdata,IER)
